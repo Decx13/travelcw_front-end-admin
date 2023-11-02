@@ -20,21 +20,14 @@
             height: auto;
             background: #1A22267A;
             text-align: center;
-            box-shadow: 0 3px 6px rgba(197, 110, 110, 0.16), 0 3px 6px rgba(197, 74, 74, 0.23);
+            box-shadow: 0 3px 6px rgb(255 255 255 / 16%), 0 3px 6px rgb(131 62 62 / 23%);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .login-key {
-            height: 100px;
-            font-size: 80px;
-            line-height: 100px;
-            background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+
 
         .login-title {
             margin-top: 15px;
@@ -56,7 +49,7 @@
         input[type=text] {
             background-color: #1A22267A;
             border: none;
-            border-bottom: 2px solid #0DB8DE;
+            border-bottom: 2px solid #ffffff;
             border-top: 0px;
             border-radius: 0px;
             font-weight: bold;
@@ -69,7 +62,7 @@
         input[type=password] {
             background-color: #1A2226;
             border: none;
-            border-bottom: 2px solid #0DB8DE;
+            border-bottom: 2px solid #ffffff;
             border-top: 0px;
             border-radius: 0px;
             font-weight: bold;
@@ -106,10 +99,10 @@
         }
 
         .form-control-label {
-            font-size: 10px;
-            color: #98EA9E;
+            font-size: 15px;
+            color: #ffffff;
             font-weight: bold;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         .login-btm {
@@ -154,7 +147,7 @@
         .background {
             margin: 0;
             padding: 0;
-            background: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?w=740&t=st=1698010688~exp=1698011288~hmac=1d5900c1dd0482eaa3231f63ec9f7850eb8a8efaf582553ccf22f3be74567dec");
+            background: url("https://i.pinimg.com/originals/45/9f/76/459f7679b3efcdc8a6e7b7a8e686e839.jpg");
             height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
@@ -171,22 +164,17 @@
             align-items: center;
             cursor: pointer;
             border: none;
-            text-transform: uppercase;
-            background-color: #0ac4cb;
+            background-color: #1c9cd2;
             border-radius: 10px;
-            color: #050202;
+            color: #ffffff;
             font-weight: 300;
             font-size: 18px;
             font-family: inherit;
             z-index: 0;
             overflow: hidden;
-            transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-            box-shadow: 0 3px 6px rgba(110, 197, 177, 0.16), 0 3px 6px rgba(74, 197, 174, 0.23);
+
         }
 
-        .l-button:hover {
-            animation: sh0 0.5s ease-in-out both;
-        }
 
         @keyframes sh0 {
             0% {
@@ -1978,26 +1966,26 @@
 </head>
 <body>
 
-<div class="main-container background">
+<div class="main-container background" style="background-color: #3f4549">
     <div class="row">
         <div class=""></div>
         <div class="login-box">
             <div class="login-key">
-                <img src="assert/img/key.png">
+                <img src="assert/img/icons8-authentication-100 (1).png">
             </div>
             <div class="col-lg-12 login-title">
-                ADMIN PANEL
+                ADMIN UI
             </div>
 
             <div class="col-lg-12 login-form">
                 <div class="col-lg-12 login-form">
                     <form>
                         <div class="form-group">
-                            <label for="txtUserName" class="form-control-label">USERNAME</label>
+                            <label for="txtUserName" class="form-control-label">User Name</label>
                             <input id="txtUserName" type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="txtPassword" class="form-control-label">PASSWORD</label>
+                            <label for="txtPassword" class="form-control-label">Password</label>
                             <input id="txtPassword" type="password" class="form-control">
                         </div>
 
@@ -2007,7 +1995,7 @@
                             </div>
                             <div class="col-lg-6 login-btm login-button">
                                 <button id="btnLogin" class="l-button">
-                                    <span>Log In</span>
+                                    <span>Login</span>
                                 </button>
                             </div>
                         </div>
