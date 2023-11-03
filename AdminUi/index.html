@@ -979,6 +979,10 @@
             width: 200px;
             height: 140px;
         }
+        label#addmore {
+            width: 200px;
+            height: 140px;
+        }
         button#btnSaveGuide {
             background-color: lawngreen;
         }
@@ -1070,10 +1074,9 @@
         }
 
         .sub-container-2 {
-            /* background-image: url(assert/img/background-4.jpeg); */
             background-repeat: no-repeat;
             background-size: cover;
-            background-color: #2c2929;
+            background-color: #04011c;
         }
 
         .box-1:before {
@@ -1099,10 +1102,10 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #3C3C3C;
+            background-color: #890000;
             -webkit-transition: .4s;
             transition: .4s;
-            border-radius: 34px;
+            border-radius: 20px;
         }
 
         .v-in .slider:before {
@@ -1119,7 +1122,7 @@
         }
 
         .v-in input:checked + .slider {
-            background-color: #0E6EB8;
+            background-color: yellow;
         }
 
         .v-in input:focus + .slider {
@@ -1194,7 +1197,7 @@
         }
 
         .v-in-h input:checked + .slider {
-            background-color: #72eb67;
+            background-color: lawngreen;
         }
 
         input:focus + .slider {
@@ -1203,17 +1206,14 @@
 
         .v-in-h input:checked + .slider:before {
             transform: translateX(2.2em);
-            background-color: green;
-            box-shadow: 0px 0px 40px 5px #72eb67;
+            background-color: lawngreen;
             border: 3px solid white;
         }
 
         .v-in-h input:checked + .slider::after {
-            content: "|";
             color: white;
             position: absolute;
             right: 0.3rem;
-            transform: rotate(45deg);
         }
 
         .plane-switch {
@@ -1222,11 +1222,12 @@
             --street-line: #A8AAB4;
             --street-line-mid: #C0C2C8;
             --sky-1: #60A7FA;
-            --sky-2: #2F8EFC;
+            --sky-2: #010136;
             --light-1: rgba(255, 233, 0, 1);
             --light-2: rgba(255, 233, 0, .3);
             cursor: pointer;
             -webkit-tap-highlight-color: transparent;
+            height: 23px;
         }
 
         .plane-switch input {
@@ -1400,14 +1401,14 @@
         }
 
         .top-margin {
-            margin-top: 100px;
+            margin-top: 25px;
         }
 
         .sub-container-3 {
             /* background-image: url(assert/img/backgound-6.jpg); */
             background-repeat: no-repeat;
             background-size: cover;
-            background-color: #2c2929;
+            background-color: #04011c;
         }
 
 
@@ -1529,6 +1530,10 @@
             justify-content: space-between;
             align-items: center;
         }
+        .columns {
+            padding: 5px;
+            margin-top: -30px;
+        }
 
         .user-nic-img {
             display: flex;
@@ -1541,12 +1546,14 @@
             font-size: 10px;
             text-align: center;
             padding: 1rem;
-            background-color: rgba(196, 205, 223, 0.04);
-            border: 1px solid crimson;
+            background-color: #14adad;
+            border: 1px solid #fcfcfc;
             border-radius: 1rem;
             font-family: "Open Sans", sans-serif;
             margin-top: 1rem;
-            color: white;
+            color: #efefef;
+            /* position: relative; */
+            left: 60px;
         }
 
         .user-nic-img input[type=file]::file-selector-button {
@@ -1557,8 +1564,52 @@
             margin-top: 20px;
             width: 200px;
             height: 150px;
-            border: 1px solid lawngreen;
+            border: 1px solid white;
         }
+        .nic-image {
+            width: 500px;
+            height: 300px;
+            gap: 20px;
+            justify-content: center;
+        }
+        button#btnSaveVehicle {
+            background-color: greenyellow;
+        }
+        button#btnDeleteVehicle {
+            background-color: red;
+        }
+        button#btnUpdateVehicle {
+            background-color: yellow;
+        }
+        button#btnClearVehicleData {
+            background-color: rebeccapurple;
+        }
+        button#btnSaveUser {
+            background-color: greenyellow;
+        }
+        button#btnUpdateUser {
+            background-color: yellow;
+        }
+        button#btnDeleteUser {
+            background-color: red;
+        }
+        button#btnClearCustomerDetails {
+            background-color: rebeccapurple;
+        }
+
+        button#btnSaveTravelPackage {
+            background-color: greenyellow;
+        }
+        button#btnUpdateTravelPackage {
+            background-color: yellow;
+        }
+        button#btnDeleteTravelPackage {
+            background-color: red;
+        }
+        button#btnClearTravelPackageDetails {
+            background-color: rebeccapurple;
+        }
+
         .search_customer{
             margin-top: 20px;
             width: 230px;
@@ -1667,13 +1718,14 @@
 
         .search_vehicle .searchBox {
             display: flex;
-            max-width: 230px;
+            max-width: 430px;
             align-items: center;
             justify-content: space-between;
             gap: 8px;
-            background: #2f3640;
-            border-radius: 50px;
+            background: #484848;
+            border-radius: 15px;
             position: relative;
+            left: 50px;
             max-height: 59px;
         }
 
@@ -1684,7 +1736,7 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+            background:dimgray;
             border: 0;
             display: inline-block;
             transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -1870,11 +1922,11 @@
             outline: none;
             font-size: 14px;
             font-weight: 500;
-            background-color: #53535f;
-            caret-color: #f7f7f8;
+            background-color: #fdfdfd;
+            caret-color: #ffffff;
             color: #fff;
             padding: 7px 10px;
-            border: 2px solid transparent;
+            border: 2px solid #939393;
             border-top-left-radius: 7px;
             border-bottom-left-radius: 7px;
             margin-right: 1px;
@@ -1915,14 +1967,16 @@
             justify-content: center;
         }
 
-        .tp_details{
+        .tp_details {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
+            align-content: stretch;
+            flex-wrap: wrap;
         }
 
         .tp_table{
-            width: 900px;
+            width: 80%;
         }
 
         .allRoundCorner{
@@ -1961,6 +2015,9 @@
             flex: 1;
             padding-left: 1em;
             cursor: pointer;
+            background: #f7f7f7;
+            color: black;
+            text-weight:bold;
         }
         .tp-choice .select::after {
             content: "▼";
@@ -2231,17 +2288,17 @@
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/1005/100/100.jpg" alt=""/></td>
-                    <td>Jane Doe</td>
-                    <td>jane.doe@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>gayana ashara</td>
+                    <td>gayana@gmail.com</td>
+                    <td>00000000000000000000</td>
                     <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                 </tr>
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/1027/100/100.jpg" alt=""/></td>
-                    <td>John Doe</td>
-                    <td>john.doe@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>sumith danajaya</td>
+                    <td>sumith@gmail.com</td>
+                    <td>000000000000000000000</td>
                     <td>Blanditiis, aliquid numquam iure voluptatibus ut maiores explicabo ducimus neque, nesciunt rerum
                         perferendis, inventore.
                     </td>
@@ -2249,17 +2306,17 @@
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/64/100/100.jpg" alt=""/></td>
-                    <td>Jane Smith</td>
-                    <td>jane.smith@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>sarith janapriya</td>
+                    <td>sarith@gmail.com</td>
+                    <td>00000000000</td>
                     <td> Culpa praesentium unde pariatur fugit eos recusandae voluptas.</td>
                 </tr>
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/1025/100/100.jpg" alt=""/></td>
-                    <td>John Smith</td>
-                    <td>john.smith@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>kasun nuwarajith</td>
+                    <td>kasun@gmail.com</td>
+                    <td>000000000000000</td>
                     <td>Aut voluptatum accusantium, eveniet, sapiente quaerat adipisci consequatur maxime temporibus
                         quas, dolorem impedit.
                     </td>
@@ -2429,8 +2486,9 @@
                     <input class="custom-input" id="guide_nic-rear" type="file">
                 </label>
 
-                <label for="guide_nic-rear" class="custum-file-upload" id="nicrear">
-                    <img class="in-img" id="guide_nic-rear_img" src="">
+
+                <label for="guide_nic-rear" class="custum-file-upload" id="addmore">
+                    <img class="in-img" id="guide_add_more_img" src="">
                     <div class="icon">
                         <svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -2445,7 +2503,7 @@
                     <div class="text">
                         <span>Add More</span>
                     </div>
-                    <input class="custom-input" id="guide_nic-rear" type="file">
+                    <input class="custom-input" id="guide_add_more" type="file">
                 </label>
             </div>
         </div>
@@ -2464,7 +2522,7 @@
             </button>
         </div>
         <div class="table-users table-guide">
-            <div class="header">Users</div>
+            <div class="header">Guides</div>
             <table cellspacing="0">
                 <tr>
                     <th>Picture</th>
@@ -2476,17 +2534,17 @@
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/1005/100/100.jpg" alt=""/></td>
-                    <td>Jane Doe</td>
-                    <td>jane.doe@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>nuwan soysa</td>
+                    <td>nuwan@gmail.com</td>
+                    <td>0000000000000000</td>
                     <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                 </tr>
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/1027/100/100.jpg" alt=""/></td>
-                    <td>John Doe</td>
-                    <td>john.doe@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>arjuna sampath</td>
+                    <td>arjuna@gmail.com</td>
+                    <td>00000000000000</td>
                     <td>Blanditiis, aliquid numquam iure voluptatibus ut maiores explicabo ducimus neque, nesciunt rerum
                         perferendis, inventore.
                     </td>
@@ -2494,17 +2552,17 @@
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/64/100/100.jpg" alt=""/></td>
-                    <td>Jane Smith</td>
-                    <td>jane.smith@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>akila sampath</td>
+                    <td>akila@gmail.com</td>
+                    <td>0000000000000000</td>
                     <td> Culpa praesentium unde pariatur fugit eos recusandae voluptas.</td>
                 </tr>
 
                 <tr>
                     <td><img src="https://i.picsum.photos/id/1025/100/100.jpg" alt=""/></td>
-                    <td>John Smith</td>
-                    <td>john.smith@foo.com</td>
-                    <td>01 800 2000</td>
+                    <td>thamara wiksitha</td>
+                    <td>thamara@gmail.com</td>
+                    <td>000000000000</td>
                     <td>Aut voluptatum accusantium, eveniet, sapiente quaerat adipisci consequatur maxime temporibus
                         quas, dolorem impedit.
                     </td>
@@ -2838,7 +2896,26 @@
                             <div class="slider slider--3">FEMALE</div>
                         </label>
                     </div>
+
                 </div>
+                <div class="nic-image" style="display: flex">
+                    <div class="user-nic-img" id="unicfront">
+                        <div>
+                            <img id="user_nic_front_img" src="assert/img/icons8-add-image-96 (1).png" height="500">
+                        </div>
+
+                        <input id="user_nic_front" type="file">
+                    </div>
+
+                    <div class="user-nic-img" id="unicrear">
+                        <div>
+                            <img id="user_nic_rear_img" src="assert/img/icons8-add-image-96 (1).png" height="500">
+                        </div>
+                        <input id="user_nic_rear" type="file">
+                    </div>
+
+                </div>
+
             </div>
             <div class="sub-row top-margin">
                 <div class="form__group field">
@@ -2850,23 +2927,22 @@
                     <label class="form__label" for="user_nic">User NIC</label>
                 </div>
             </div>
-            <div class="sub-row">
+            <div class="sub-row" id="useriddiv">
                 <div class="row-2">
-                    <div class="sub-row ">
-                        <div class="user-nic-img">
+                    <div class="sub-row " >
+                       <!-- <div class="user-nic-img" id="unicfront">
                             <div>
                                 <img id="user_nic_front_img" src="assert/img/icons8-add-image-96 (1).png" height="500">
                             </div>
 
                             <input id="user_nic_front" type="file">
-                        </div>
-                        <div class="user-nic-img">
+                        </div>-->
+                       <!-- <div class="user-nic-img" id="unicrear">
                             <div>
                                 <img id="user_nic_rear_img" src="assert/img/icons8-add-image-96 (1).png" height="500">
                             </div>
-
                             <input id="user_nic_rear" type="file">
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -2879,7 +2955,7 @@
             <button id="btnUpdateUser" class="btn">
                 Update
             </button>
-            <button  class="btn">
+            <button  class="btn" id="btnDeleteUser">
                 Delete
             </button>
             <button id="btnClearCustomerDetails" class="btn">
@@ -2890,7 +2966,7 @@
     </div>
 </div>
 <div class="main-container sub-container-4">
-    <div class="tp_details_container">
+    <div class="tp_details_container" style="display: flex">
         <div class="tp_details">
             <div class="container">
                 <input id="txtTravelPackageId" type="text" name="text" class="input" placeholder="Travel Package Id">
@@ -2923,72 +2999,77 @@
             <div class="container">
                 <input id="txtTpEstimatedPrice" type="number" name="text" class="input allRoundCorner" placeholder="Estimated Price">
             </div>
-        </div>
-        <div class="tp_table">
-            <div class="table-users">
-                <div class="header">Users</div>
-                <table cellspacing="0">
-                    <tr>
-                        <th>Picture</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th width="230">Comments</th>
-                    </tr>
 
-                    <tr>
-                        <td><img src="https://i.picsum.photos/id/1005/100/100.jpg" alt=""/></td>
-                        <td>Jane Doe</td>
-                        <td>jane.doe@foo.com</td>
-                        <td>01 800 2000</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                    </tr>
+            <div class="butto-set">
+                <button id="btnSaveTravelPackage" class="btn">
+                    Save
+                </button>
+                <button id="btnUpdateTravelPackage" class="btn">
+                    Update
+                </button>
+                <button id="btnDeleteTravelPackage" class="btn">
+                    Delete
+                </button>
+                <button id="btnClearTravelPackageDetails" class="btn">
+                    Clear
+                </button>
+            </div>
 
-                    <tr>
-                        <td><img src="https://i.picsum.photos/id/1027/100/100.jpg" alt=""/></td>
-                        <td>John Doe</td>
-                        <td>john.doe@foo.com</td>
-                        <td>01 800 2000</td>
-                        <td>Blanditiis, aliquid numquam iure voluptatibus ut maiores explicabo ducimus neque, nesciunt rerum
-                            perferendis, inventore.
-                        </td>
-                    </tr>
+            <div class="tp_table">
+                <div class="table-users">
+                    <div class="header">Travel Packages</div>
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Picture</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th width="230">Comments</th>
+                        </tr>
 
-                    <tr>
-                        <td><img src="https://i.picsum.photos/id/64/100/100.jpg" alt=""/></td>
-                        <td>Jane Smith</td>
-                        <td>jane.smith@foo.com</td>
-                        <td>01 800 2000</td>
-                        <td> Culpa praesentium unde pariatur fugit eos recusandae voluptas.</td>
-                    </tr>
+                        <tr>
+                            <td><img src="https://i.picsum.photos/id/1005/100/100.jpg" alt=""/></td>
+                            <td>kusal mendis</td>
+                            <td>kusal@gmail.com</td>
+                            <td>0000000000000</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                        </tr>
 
-                    <tr>
-                        <td><img src="https://i.picsum.photos/id/1025/100/100.jpg" alt=""/></td>
-                        <td>John Smith</td>
-                        <td>john.smith@foo.com</td>
-                        <td>01 800 2000</td>
-                        <td>Aut voluptatum accusantium, eveniet, sapiente quaerat adipisci consequatur maxime temporibus
-                            quas, dolorem impedit.
-                        </td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td><img src="https://i.picsum.photos/id/1027/100/100.jpg" alt=""/></td>
+                            <td>ravindu deshapriya</td>
+                            <td>ravindu@gmail.com</td>
+                            <td>0000000000000000</td>
+                            <td>Blanditiis, aliquid numquam iure voluptatibus ut maiores explicabo ducimus neque, nesciunt rerum
+                                perferendis, inventore.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="https://i.picsum.photos/id/64/100/100.jpg" alt=""/></td>
+                            <td>kalindu gimhan</td>
+                            <td>kalindu@gmail.com</td>
+                            <td>00000000000000000000</td>
+                            <td> Culpa praesentium unde pariatur fugit eos recusandae voluptas.</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="https://i.picsum.photos/id/1025/100/100.jpg" alt=""/></td>
+                            <td>pawan minon</td>
+                            <td>pawan@gmail.com</td>
+                            <td>01 800 2000</td>
+                            <td>Aut voluptatum accusantium, eveniet, sapiente quaerat adipisci consequatur maxime temporibus
+                                quas, dolorem impedit.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
+        </div>
+
     </div>
-    <div class="butto-set">
-        <button id="btnSaveTravelPackage" class="btn">
-            Save
-        </button>
-        <button id="btnUpdateTravelPackage" class="btn">
-            Update
-        </button>
-        <button id="btnDeleteTravelPackage" class="btn">
-            Delete
-        </button>
-        <button id="btnClearTravelPackageDetails" class="btn">
-            Clear
-        </button>
-    </div>
+
 </div>
 <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
