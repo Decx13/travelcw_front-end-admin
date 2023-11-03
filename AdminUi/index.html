@@ -234,17 +234,18 @@
         }
 
         .containers {
-            height: 270px;
+            height: 155px;
             position: relative;
             max-width: 320px;
-            margin: auto;
+            margin: 10px;
+
         }
 
         .containers .imageWrapper {
             border: 3px solid #888;
             width: 70%;
             padding-bottom: 70%;
-            border-radius: 50%;
+
             overflow: hidden;
             position: absolute;
             top: 50%;
@@ -279,7 +280,7 @@
             color: #fff;
             font-size: 1.2em;
             background: transparent;
-            border: 2px solid #888;
+            border: 2px solid snow;
             padding: 0.85em 1em;
             display: inline;
             -ms-transition: all 0.2s ease;
@@ -288,10 +289,8 @@
         }
 
         .file-upload:hover {
-            background: #999;
-            -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-            -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-            box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+            background: #1e76ea;
+
         }
 
         .file-upload input.file-input {
@@ -317,7 +316,7 @@
             height: 100%;
             /* background-image: repeating-radial-gradient(#0c0a0a 80%, #2f312f 90%, #3f4549 90%); */
             background-size: 65px 65px;
-            background-color: #2c2929;
+            background-color:#04011c;
         }
         .form__group {
             position: relative;
@@ -339,6 +338,8 @@
             transition: border-color 0.2s;
         }
 
+
+
         .form__field::placeholder {
             color: transparent;
         }
@@ -359,7 +360,7 @@
             display: block;
             transition: 0.2s;
             font-size: 17px;
-            color: #FFE699;
+            color: white;
             pointer-events: none;
         }
 
@@ -367,7 +368,7 @@
             display: block;
             transition: 0.2s;
             font-size: 17px;
-            color: #FFE699;
+            color: white;
             pointer-events: none;
         }
 
@@ -385,7 +386,7 @@
             display: block;
             transition: 0.2s;
             font-size: 17px;
-            color: #FFE699;
+            color: white;
             font-weight: 700;
         }
 
@@ -415,15 +416,11 @@
         .box select {
             all: unset;
             background-color: transparent;
-            color: #FFE699;
+            color: #ffffff;
             padding: 12px;
-            width: 276px;
-            border: none;
+            width: 280px;
             font-size: 20px;
-            /*box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);*/
-            /*-webkit-appearance: button;
-            appearance: button;*/
-            outline: none;
+            font-weight: 200;
         }
 
         .box::before {
@@ -473,7 +470,7 @@
         .checkbox-wrapper-5 .check {
             --size: 40px;
             position: relative;
-            background: linear-gradient(90deg, #f19af3, #f099b5);
+            background: linear-gradient(90deg, greenyellow, greenyellow);
             line-height: 0;
             perspective: 400px;
             font-size: var(--size);
@@ -496,7 +493,7 @@
         .checkbox-wrapper-5 .check label {
             width: calc(2.2 * var(--size));
             height: var(--size);
-            background: #d7d7d7;
+            background: rosybrown;
             overflow: hidden;
         }
 
@@ -522,32 +519,9 @@
         }
 
         .checkbox-wrapper-5 .check label::before,
-        .checkbox-wrapper-5 .check label::after {
-            content: "· ·";
-            position: absolute;
-            overflow: hidden;
-            left: calc(.15 * var(--size));
-            top: calc(.5 * var(--size));
-            height: var(--size);
-            letter-spacing: calc(-0.04 * var(--size));
-            color: #9b9b9b;
-            font-family: "Times New Roman", serif;
-            z-index: 2;
-            font-size: calc(.6 * var(--size));
-            border-radius: 0;
-            transform-origin: 0 0 calc(-0.5 * var(--size));
-            backface-visibility: hidden;
-        }
 
-        .checkbox-wrapper-5 .check label::after {
-            content: "●";
-            top: calc(.65 * var(--size));
-            left: calc(.2 * var(--size));
-            height: calc(.1 * var(--size));
-            width: calc(.35 * var(--size));
-            font-size: calc(.2 * var(--size));
-            transform-origin: 0 0 calc(-0.4 * var(--size));
-        }
+
+
 
         .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::before,
         .checkbox-wrapper-5 .check input[type="checkbox"]:checked + label::after {
@@ -603,7 +577,7 @@
             display: block;
             transition: 0.2s;
             font-size: 8px;
-            color: #FFE699;
+            color: white;
             pointer-events: none;
         }
 
@@ -613,7 +587,7 @@
             display: block;
             transition: 0.2s;
             font-size: 13px;
-            color: #FFE699;
+            color: white;
             font-weight: 700;
         }
 
@@ -642,6 +616,18 @@
             letter-spacing: 2px;
             background-color: transparent;
             box-shadow: 1px 1px 12px #000000;
+        }
+        button#btnSaveHotel {
+           background-color: lawngreen;
+        }
+        button#btnUpdateHotel {
+            background-color: yellow;
+        }
+        button#btnDeleteHotel {
+            background-color: red;
+        }
+        button#btnClearHotelData {
+            background-color: rebeccapurple;
         }
 
         .btn::before {
@@ -678,36 +664,36 @@
         }
 
         .butto-set button:nth-child(1)::before {
-            background-color: #56e0e0;
+            background-color: white;
         }
 
         .butto-set button:nth-child(1):active::before {
-            background-color: #1d4fce;
+            background-color: white;
         }
 
 
         .butto-set button:nth-child(2)::before {
-            background-color: #4fe75b;
+            background-color: white;
         }
 
         .butto-set button:nth-child(2):active::before {
-            background-color: #00cc11;
+            background-color: white;
         }
 
         .butto-set button:nth-child(3)::before {
-            background-color: #e5343a;
+            background-color: white;
         }
 
         .butto-set button:nth-child(3):active::before {
-            background-color: #d9010a;
+            background-color: white;
         }
 
         .butto-set button:nth-child(4)::before {
-            background-color: #f3fd69;
+            background-color: white;
         }
 
         .butto-set button:nth-child(4):active::before {
-            background-color: #e3f30a;
+            background-color: white;
         }
 
         .sub-container-1 {
@@ -1975,14 +1961,14 @@
                 <img src="assert/img/icons8-authentication-100 (1).png">
             </div>
             <div class="col-lg-12 login-title">
-                ADMIN UI
+                ADMIN LOGIN
             </div>
 
             <div class="col-lg-12 login-form">
                 <div class="col-lg-12 login-form">
                     <form>
                         <div class="form-group">
-                            <label for="txtUserName" class="form-control-label">User Name</label>
+                            <label for="txtUserName" class="form-control-label">Admin Name</label>
                             <input id="txtUserName" type="text" class="form-control">
                         </div>
                         <div class="form-group">
